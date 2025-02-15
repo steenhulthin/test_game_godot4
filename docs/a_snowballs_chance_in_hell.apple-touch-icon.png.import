@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgf223e8simn1"
-path="res://.godot/imported/a_snowballs_chance_in_hell.apple-touch-icon.png-17c7fdd0673a4c43845a00308307c60e.ctex"
+path="res://.godot/imported/a_snowballs_chance_in_hell.apple-touch-icon.png-52626b118c00cc9b8a7a6d0cdc3229fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://exports/a_snowballs_chance_in_hell.apple-touch-icon.png"
-dest_files=["res://.godot/imported/a_snowballs_chance_in_hell.apple-touch-icon.png-17c7fdd0673a4c43845a00308307c60e.ctex"]
+source_file="res://docs/a_snowballs_chance_in_hell.apple-touch-icon.png"
+dest_files=["res://.godot/imported/a_snowballs_chance_in_hell.apple-touch-icon.png-52626b118c00cc9b8a7a6d0cdc3229fa.ctex"]
 
 [params]
 
