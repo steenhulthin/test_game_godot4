@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://eqs5o20634c8"]
+
+[ext_resource type="Texture2D" uid="uid://ci2p4u4sn106j" path="res://assets/sprites/Fighter/Idle.png" id="1_oc5tj"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_pwnpm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w1qum"]
+atlas = ExtResource("1_oc5tj")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpwfo"]
+atlas = ExtResource("1_oc5tj")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mrw4"]
+atlas = ExtResource("1_oc5tj")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uujb0"]
+atlas = ExtResource("1_oc5tj")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cyso"]
+atlas = ExtResource("1_oc5tj")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djgem"]
+atlas = ExtResource("1_oc5tj")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jquqf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w1qum")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpwfo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mrw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uujb0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cyso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djgem")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6q1mr"]
+height = 62.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_pwnpm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jquqf")
+autoplay = "default"
+frame_progress = 0.137464
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 33)
+shape = SubResource("CapsuleShape2D_6q1mr")
